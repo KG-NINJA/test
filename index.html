@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A reproducible evidence record for five Base USDC x402 payments and a paid API response.">
+  <meta name="theme-color" content="#07111f">
+  <title>Reproducible x402 Payment Evidence</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="shell topbar">
+    <a class="brand" href="/">KG-NINJA / FIELD EVIDENCE</a>
+    <span class="badge">PUBLIC · READ-ONLY</span>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <p class="eyebrow">X402 / BASE MAINNET / USDC</p>
+      <h1>Five payments.<br><em>Five links to verify.</em></h1>
+      <p class="lede">A compact, reproducible record of a machine-payable API flow: request, HTTP 402, x402 payment, Base settlement, and paid response.</p>
+      <div class="actions">
+        <a class="button" href="https://api.kgninja.dev/proof.md">Read the signed flow proof ↗</a>
+        <a class="quiet" href="https://api.kgninja.dev/agent.json">Inspect machine metadata ↗</a>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <article class="panel highlight">
+        <p class="label">RECONCILIATION SNAPSHOT</p>
+        <div class="big">5 <span>matched payments</span></div>
+        <dl>
+          <div><dt>Confirmed amount</dt><dd>0.05 USDC</dd></div>
+          <div><dt>Network</dt><dd>Base mainnet</dd></div>
+          <div><dt>Paid route</dt><dd>POST /fix-error</dd></div>
+          <div><dt>Unit price</dt><dd>0.01 USDC</dd></div>
+        </dl>
+        <a class="text-link" href="https://api.kgninja.dev/revenue-log/integrity">Open live integrity JSON ↗</a>
+      </article>
+      <article class="panel">
+        <p class="label">WHAT A THIRD PARTY CAN REPEAT</p>
+        <ol class="steps">
+          <li><b>Discover</b><span>Read the public API contract and payment terms.</span></li>
+          <li><b>Challenge</b><span>Call the paid route without proof and receive HTTP 402.</span></li>
+          <li><b>Settle</b><span>Pay 0.01 USDC on Base and retain the transaction hash.</span></li>
+          <li><b>Fulfil</b><span>Retry the same request and verify the paid response.</span></li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><p class="label">PUBLIC EVIDENCE SET</p><h2>Transaction links</h2></div>
+      <p class="muted">The first link is the service's published end-to-end proof. The remaining links are Base USDC transfers observed at the published service wallet. Payer identity is not asserted.</p>
+      <div class="tx-list">
+        <a href="https://basescan.org/tx/0x9c51a524ca4c60b8bfbf119c8b6a058571c37c5af79178cfffe6b752b1ac32c5"><span>01 · published flow proof</span><code>0x9c51a524…b1ac32c5 ↗</code></a>
+        <a href="https://basescan.org/tx/0x421c1fc33f8747c2ae7b3ecd5a5bbf26fbb0ba625cf2cfee4615f54f93e32a22"><span>02 · Base USDC transfer</span><code>0x421c1fc3…f93e32a22 ↗</code></a>
+        <a href="https://basescan.org/tx/0x742ef501f45e56b03bcb881187e8f07b713f448ff45fd653ef02dba7658cd98f"><span>03 · Base USDC transfer</span><code>0x742ef501…658cd98f ↗</code></a>
+        <a href="https://basescan.org/tx/0xd92b4820c065b25bf7319a26eceda170d7dd763ee5280f2ca2f05ccf1b5abd9b"><span>04 · Base USDC transfer</span><code>0xd92b4820…f1b5abd9b ↗</code></a>
+        <a href="https://basescan.org/tx/0xc55bf7dac07ca6d4d44d1d1c07f8d636b06a468875df56efd3e8d066106b2600"><span>05 · Base USDC transfer</span><code>0xc55bf7da…6106b2600 ↗</code></a>
+      </div>
+    </section>
+
+    <section class="grid two section">
+      <article class="panel">
+        <p class="label">PROVES</p>
+        <ul class="clean"><li>Base mainnet contains the linked USDC transfers.</li><li>The service publishes a 402 → payment → 200 proof.</li><li>The public reconciliation endpoint reports 5 matched payments.</li></ul>
+      </article>
+      <article class="panel caution">
+        <p class="label">DOES NOT PROVE</p>
+        <ul class="clean"><li>Who controlled each payer wallet.</li><li>That a named company or autonomous AI chose to buy.</li><li>That every receipt in the application log is a unique settlement.</li><li>That historical backfill is complete.</li></ul>
+      </article>
+    </section>
+
+    <section class="section closing">
+      <p class="label">MACHINE-READABLE SOURCES</p>
+      <div class="source-grid">
+        <a href="/agent.json"><code>/agent.json</code><span>identity and payment boundary</span></a>
+        <a href="/llms.txt"><code>/llms.txt</code><span>plain-language summary</span></a>
+        <a href="https://api.kgninja.dev/openapi.json"><code>API OpenAPI</code><span>request and response contract ↗</span></a>
+        <a href="https://api.kgninja.dev/proof.json"><code>API proof.json</code><span>published flow proof ↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shell footer"><span>Originator: KGNINJA</span><span>Evidence snapshot: 2026-08-01</span><span>Claims are deliberately conservative.</span></footer>
+</body>
+</html>
+
