@@ -1,0 +1,16 @@
+{
+  "artifact": "Reproducible x402 Payment Evidence",
+  "version": "2026-08-01",
+  "verification": {
+    "integrity_url": "https://api.kgninja.dev/revenue-log/integrity",
+    "proof_url": "https://api.kgninja.dev/proof.json",
+    "chain": "Base mainnet",
+    "asset": "USDC"
+  },
+  "privacy": {
+    "payer_identity_published": false,
+    "private_keys_published": false,
+    "raw_logs_published": false
+  }
+}
+
