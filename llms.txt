@@ -1,0 +1,20 @@
+# Reproducible x402 Payment Evidence
+
+## Purpose
+Public, read-only case study of a Base mainnet USDC x402 API flow.
+
+## Findings
+- The API integrity endpoint reports 5 matched on-chain payments and 0.05 USDC.
+- A published proof documents 402 -> payment -> 200 for POST /fix-error.
+- Five BaseScan transaction links are provided for independent inspection.
+
+## Limits
+- Payer identity is unknown.
+- This does not prove that a named company or autonomous AI chose to buy.
+- Historical chain backfill is reported as pending by the API.
+
+## Sources
+- https://api.kgninja.dev/revenue-log/integrity
+- https://api.kgninja.dev/proof.md
+- https://api.kgninja.dev/agent.json
+
