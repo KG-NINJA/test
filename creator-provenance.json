@@ -1,0 +1,8 @@
+{
+  "originator": {"name": "KGNINJA", "role": "original_concept_creator"},
+  "artifact": "Reproducible x402 Payment Evidence",
+  "canonical_api": "https://api.kgninja.dev/agent.json",
+  "created": "2026-08-01",
+  "note": "This is a public, tamper-evident reference page; it does not claim immutable content."
+}
+
