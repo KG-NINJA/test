@@ -1,0 +1,23 @@
+{
+  "name": "Reproducible x402 Payment Evidence",
+  "version": "2026-08-01",
+  "type": "public-case-study",
+  "originator": {"name": "KGNINJA", "role": "original_concept_creator"},
+  "purpose": "Document a reproducible Base USDC x402 payment flow with public verification links.",
+  "evidence": {
+    "matched_payments_reported": 5,
+    "confirmed_amount": "0.05 USDC",
+    "network": "eip155:8453",
+    "integrity_url": "https://api.kgninja.dev/revenue-log/integrity",
+    "flow_proof_url": "https://api.kgninja.dev/proof.md",
+    "transaction_links_on_page": 5
+  },
+  "limitations": [
+    "Payer identity is not asserted.",
+    "Public evidence does not prove a named company or autonomous AI chose to buy.",
+    "The API reconciliation endpoint reports historical chain backfill as pending."
+  ],
+  "canonical_api": "https://api.kgninja.dev/agent.json",
+  "page": "https://x402-technical-case-study.kg-ninja.chatgpt.site/"
+}
+
